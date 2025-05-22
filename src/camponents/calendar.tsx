@@ -52,7 +52,7 @@ const Calendar = () => {
     <div className="p-6 max-w-4xl mx-auto">
       <div className="flex justify-between items-center mb-4">
         <button
-          className="bg-blue-500 text-white px-3 py-1 rounded"
+          className="bg-cyan-900 text-white px-3 py-1 rounded"
           onClick={() => changeMonth(-1)}
         >
           ← Prev
@@ -62,7 +62,7 @@ const Calendar = () => {
           {currentDate.getFullYear()}
         </h2>
         <button
-          className="bg-blue-500 text-white px-3 py-1 rounded"
+          className="bg-cyan-900 text-white px-3 py-1 rounded"
           onClick={() => changeMonth(1)}
         >
           Next →
@@ -91,7 +91,7 @@ const Calendar = () => {
             <div
               key={day}
               className={`p-2 border rounded relative ${
-                isToday(day) ? "bg-green-600 font-bold" : "bg-white"
+                isToday(day) ? "bg-red-400 font-bold" : "bg-white"
               }`}
             >
               <div>{day}</div>
@@ -99,7 +99,7 @@ const Calendar = () => {
                 <div
                   key={index}
                   className={`text-xs mt-1 p-1 rounded ${
-                    index % 2 === 0 ? "bg-green-600" : "bg-green-100"
+                    index % 2 === 0 ? "bg-teal-100" : "bg-green-100"
                   }`}
                 >
                   {event.title} ({event.time})
