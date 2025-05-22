@@ -1,0 +1,44 @@
+[
+  {
+    "title": "Meeting with Team",
+    "date": "2025-05-22",
+    "time": "10:00 AM",
+    "duration": "1h"
+  },
+  {
+    "title": "Dentist Appointment",
+    "date": "2025-05-22",
+    "time": "3:00 PM",
+    "duration": "30m"
+  },
+  {
+    "title": "Lunch with Sarah",
+    "date": "2025-05-23",
+    "time": "1:00 PM",
+    "duration": "1h"
+  },
+  {
+    "title": "Project Deadline",
+    "date": "2025-05-25",
+    "time": "5:00 PM",
+    "duration": "—"
+  },
+  {
+    "title": "Yoga Class",
+    "date": "2025-05-25",
+    "time": "6:00 AM",
+    "duration": "1h"
+  },
+  {
+    "title": "Client Call",
+    "date": "2025-05-25",
+    "time": "11:00 AM",
+    "duration": "45m"
+  },
+  {
+    "title": "Code Review",
+    "date": "2025-05-28",
+    "time": "2:00 PM",
+    "duration": "1h"
+  }
+]
