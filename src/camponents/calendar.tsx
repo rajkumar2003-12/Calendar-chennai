@@ -91,7 +91,7 @@ const Calendar = () => {
             <div
               key={day}
               className={`p-2 border rounded relative ${
-                isToday(day) ? "bg-green-00 font-bold" : "bg-white"
+                isToday(day) ? "bg-green-600 font-bold" : "bg-white"
               }`}
             >
               <div>{day}</div>
