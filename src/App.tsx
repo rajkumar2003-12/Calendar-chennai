@@ -8,7 +8,7 @@ const Sidebar = () => {
 
   return (
     <div className="w-64 min-h-screen bg-[#f8f9fc] p-4 border-r">
-      <h1 className="text-xl font-bold mb-6">KarateStudio</h1>
+      <h1 className="text-xl font-bold mb-6">sparrow</h1>
       <ul className="space-y-3">
         {menuItems.map((item, idx) => (
           <li key={idx} className="text-gray-700 hover:text-blue-600 cursor-pointer">
