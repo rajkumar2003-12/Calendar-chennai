@@ -99,7 +99,7 @@ const Calendar = () => {
                 <div
                   key={index}
                   className={`text-xs mt-1 p-1 rounded ${
-                    index % 2 === 0 ? "bg-blue-100" : "bg-green-100"
+                    index % 2 === 0 ? "bg-green-600" : "bg-green-100"
                   }`}
                 >
                   {event.title} ({event.time})
