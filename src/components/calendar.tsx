@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Navbar } from "./navbar";
 
 interface Event {
   title: string;
@@ -49,6 +50,7 @@ const Calendar = () => {
   const calendarDays = Array.from({ length: daysInMonth }, (_, i) => i + 1);
 
   return (
+    <div><Navbar/>
     <div className="p-6 max-w-4xl mx-auto">
       <div className="flex justify-between items-center mb-4">
         <button
@@ -91,7 +93,7 @@ const Calendar = () => {
             <div
               key={day}
               className={`p-2 border rounded relative ${
-                isToday(day) ? "bg-red-400 font-bold" : "bg-white"
+                isToday(day) ? "bg-sky-200 font-bold" : "bg-white"
               }`}
             >
               <div>{day}</div>
@@ -112,6 +114,7 @@ const Calendar = () => {
           );
         })}
       </div>
+    </div>
     </div>
   );
 };

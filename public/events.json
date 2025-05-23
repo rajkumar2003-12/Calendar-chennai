@@ -1,5 +1,71 @@
 [
   {
+    "title": "New Year Celebration",
+    "date": "2025-01-01",
+    "time": "12:00 AM",
+    "duration": "3h"
+  },
+  {
+    "title": "Team Sync-up",
+    "date": "2025-01-10",
+    "time": "10:00 AM",
+    "duration": "1h"
+  },
+  {
+    "title": "Parent-Teacher Meeting",
+    "date": "2025-01-15",
+    "time": "2:00 PM",
+    "duration": "1h"
+  },
+  {
+    "title": "Republic Day Ceremony",
+    "date": "2025-01-26",
+    "time": "8:00 AM",
+    "duration": "2h"
+  },
+  {
+    "title": "Quarterly Planning",
+    "date": "2025-02-03",
+    "time": "11:00 AM",
+    "duration": "2h"
+  },
+  {
+    "title": "Doctor Appointment",
+    "date": "2025-02-12",
+    "time": "9:00 AM",
+    "duration": "30m"
+  },
+  {
+    "title": "Valentine's Dinner",
+    "date": "2025-02-14",
+    "time": "7:00 PM",
+    "duration": "2h"
+  },
+  {
+    "title": "Tech Conference",
+    "date": "2025-03-05",
+    "time": "10:00 AM",
+    "duration": "6h"
+  },
+  {
+    "title": "Holi Celebration",
+    "date": "2025-03-17",
+    "time": "10:00 AM",
+    "duration": "4h"
+  },
+  {
+    "title": "Friend's Wedding",
+    "date": "2025-04-10",
+    "time": "5:00 PM",
+    "duration": "3h"
+  },
+  {
+    "title": "Project Kickoff",
+    "date": "2025-04-20",
+    "time": "9:00 AM",
+    "duration": "2h"
+  },
+  {
     "title": "Meeting with Team",
     "date": "2025-05-22",
     "time": "10:00 AM",
@@ -18,12 +84,6 @@
     "duration": "1h"
   },
   {
-    "title": "Project Deadline",
-    "date": "2025-05-25",
-    "time": "5:00 PM",
-    "duration": "—"
-  },
-  {
     "title": "Yoga Class",
     "date": "2025-05-25",
     "time": "6:00 AM",
@@ -39,6 +99,114 @@
     "title": "Code Review",
     "date": "2025-05-28",
     "time": "2:00 PM",
+    "duration": "1h"
+  },
+  {
+    "title": "Team Outing",
+    "date": "2025-06-02",
+    "time": "4:00 PM",
+    "duration": "3h"
+  },
+  {
+    "title": "Doctor Checkup",
+    "date": "2025-06-05",
+    "time": "10:30 AM",
+    "duration": "30m"
+  },
+  {
+    "title": "Performance Review",
+    "date": "2025-06-10",
+    "time": "11:00 AM",
+    "duration": "1h"
+  },
+  {
+    "title": "Webinar: Tech Trends",
+    "date": "2025-07-01",
+    "time": "5:00 PM",
+    "duration": "1.5h"
+  },
+  {
+    "title": "Birthday Party",
+    "date": "2025-07-15",
+    "time": "7:00 PM",
+    "duration": "2h"
+  },
+  {
+    "title": "Grocery Shopping",
+    "date": "2025-07-20",
+    "time": "9:00 AM",
+    "duration": "1h"
+  },
+  {
+    "title": "Independence Day Parade",
+    "date": "2025-08-15",
+    "time": "8:00 AM",
+    "duration": "3h"
+  },
+  {
+    "title": "Family Dinner",
+    "date": "2025-09-10",
+    "time": "8:00 PM",
+    "duration": "2h"
+  },
+  {
+    "title": "Client Presentation",
+    "date": "2025-09-25",
+    "time": "2:00 PM",
+    "duration": "1h"
+  },
+  {
+    "title": "Diwali Celebration",
+    "date": "2025-10-20",
+    "time": "6:00 PM",
+    "duration": "3h"
+  },
+  {
+    "title": "Workshop: AI for Everyone",
+    "date": "2025-11-05",
+    "time": "3:00 PM",
+    "duration": "2h"
+  },
+  {
+    "title": "Christmas Eve Service",
+    "date": "2025-12-24",
+    "time": "7:00 PM",
+    "duration": "2h"
+  },
+  {
+    "title": "New Year's Eve Party",
+    "date": "2025-12-31",
+    "time": "9:00 PM",
+    "duration": "3h"
+  },
+  {
+    "title": "New Year Brunch",
+    "date": "2026-01-01",
+    "time": "11:00 AM",
+    "duration": "2h"
+  },
+  {
+    "title": "Team Kickoff Meeting",
+    "date": "2026-01-03",
+    "time": "10:00 AM",
+    "duration": "1h"
+  },
+  {
+    "title": "Budget Planning",
+    "date": "2026-01-10",
+    "time": "3:00 PM",
+    "duration": "1.5h"
+  },
+  {
+    "title": "Health Checkup",
+    "date": "2026-01-18",
+    "time": "9:00 AM",
+    "duration": "1h"
+  },
+  {
+    "title": "Monthly Townhall",
+    "date": "2026-01-25",
+    "time": "5:00 PM",
     "duration": "1h"
   }
 ]
