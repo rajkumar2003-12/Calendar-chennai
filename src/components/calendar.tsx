@@ -55,7 +55,7 @@ const Calendar = () => {
       <div className="p-4 sm:p-6 w-full max-w-6xl mx-auto">
         <div className="flex flex-col sm:flex-row justify-between items-center gap-2 sm:gap-0 mb-4">
           <button
-            className="bg-cyan-900 text-white px-4 py-2 rounded text-sm sm:text-base"
+            className="bg-cyan-900 text-white px-4 py-2 rounded-full text-sm sm:text-base"
             onClick={() => changeMonth(-1)}
           >
             ← Prev
@@ -67,7 +67,7 @@ const Calendar = () => {
           </h2>
 
           <button
-            className="bg-cyan-900 text-white px-4 py-2 rounded text-sm sm:text-base"
+            className="bg-cyan-900 text-white px-4 py-2 rounded-full text-sm sm:text-base"
             onClick={() => changeMonth(1)}
           >
             Next →
