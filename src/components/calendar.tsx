@@ -50,71 +50,77 @@ const Calendar = () => {
   const calendarDays = Array.from({ length: daysInMonth }, (_, i) => i + 1);
 
   return (
-    <div><Navbar/>
-    <div className="p-6 max-w-4xl mx-auto">
-      <div className="flex justify-between items-center mb-4">
-        <button
-          className="bg-cyan-900 text-white px-3 py-1 rounded"
-          onClick={() => changeMonth(-1)}
-        >
-          ← Prev
-        </button>
-        <h2 className="text-xl font-semibold">
-          {currentDate.toLocaleString("default", { month: "long" })}{" "}
-          {currentDate.getFullYear()}
-        </h2>
-        <button
-          className="bg-cyan-900 text-white px-3 py-1 rounded"
-          onClick={() => changeMonth(1)}
-        >
-          Next →
-        </button>
-      </div>
+    <div className="flex flex-col min-h-screen bg-gray-50">
+      <Navbar />
+      <div className="p-4 sm:p-6 w-full max-w-6xl mx-auto">
+        <div className="flex flex-col sm:flex-row justify-between items-center gap-2 sm:gap-0 mb-4">
+          <button
+            className="bg-cyan-900 text-white px-4 py-2 rounded text-sm sm:text-base"
+            onClick={() => changeMonth(-1)}
+          >
+            ← Prev
+          </button>
 
-      <div className="grid grid-cols-7 gap-2 text-center font-semibold">
-        {["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"].map((day) => (
-          <div key={day}>{day}</div>
-        ))}
-      </div>
+          <h2 className="text-lg sm:text-2xl font-semibold text-center">
+            {currentDate.toLocaleString("default", { month: "long" })}{" "}
+            {currentDate.getFullYear()}
+          </h2>
 
-      <div className="grid grid-cols-7 gap-2 mt-2">
-        {Array.from({ length: firstDayOfMonth }).map((_, i) => (
-          <div key={`empty-${i}`}></div>
-        ))}
+          <button
+            className="bg-cyan-900 text-white px-4 py-2 rounded text-sm sm:text-base"
+            onClick={() => changeMonth(1)}
+          >
+            Next →
+          </button>
+        </div>
+        <div className="grid grid-cols-7 text-xs sm:text-sm font-semibold text-center">
+          {["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"].map((day) => (
+            <div key={day} className="text-gray-600">{day}</div>
+          ))}
+        </div>
+        <div className="grid grid-cols-7 gap-2 mt-2 text-xs sm:text-sm">
+          {Array.from({ length: firstDayOfMonth }).map((_, i) => (
+            <div key={`empty-${i}`}></div>
+          ))}
 
-        {calendarDays.map((day) => {
-          const dateStr = `${currentDate.getFullYear()}-${String(
-            currentDate.getMonth() + 1
-          ).padStart(2, "0")}-${String(day).padStart(2, "0")}`;
+          {calendarDays.map((day) => {
+            const dateStr = `${currentDate.getFullYear()}-${String(
+              currentDate.getMonth() + 1
+            ).padStart(2, "0")}-${String(day).padStart(2, "0")}`;
 
-          const dayEvents = getEventsForDate(dateStr);
+            const dayEvents = getEventsForDate(dateStr);
 
-          return (
-            <div
-              key={day}
-              className={`p-2 border rounded relative ${
-                isToday(day) ? "bg-sky-200 font-bold" : "bg-white"
-              }`}
-            >
-              <div>{day}</div>
-              {dayEvents.map((event, index) => (
-                <div
-                  key={index}
-                  className={`text-xs mt-1 p-1 rounded ${
-                    index % 2 === 0 ? "bg-teal-100" : "bg-green-100"
-                  }`}
-                >
-                  {event.title} ({event.time})
+            return (
+              <div
+                key={day}
+                className={`p-2 sm:p-3 border rounded relative h-auto min-h-[60px] sm:min-h-[80px] ${
+                  isToday(day) ? "bg-sky-200 font-bold" : "bg-white"
+                }`}
+              >
+                <div className="font-semibold">{day}</div>
+                <div className="mt-1 space-y-1 max-h-20 overflow-y-auto">
+                  {dayEvents.slice(0, 2).map((event, index) => (
+                    <div
+                      key={index}
+                      className={`text-xs p-1 rounded truncate ${
+                        index % 2 === 0 ? "bg-teal-100" : "bg-green-100"
+                      }`}
+                      title={`${event.title} at ${event.time}`}
+                    >
+                      {event.title} ({event.time})
+                    </div>
+                  ))}
+                  {dayEvents.length > 2 && (
+                    <div className="text-[10px] text-red-500">
+                      + More Events
+                    </div>
+                  )}
                 </div>
-              ))}
-              {dayEvents.length > 2 && (
-                <div className="text-xs text-red-500">+ More Events</div>
-              )}
-            </div>
-          );
-        })}
+              </div>
+            );
+          })}
+        </div>
       </div>
-    </div>
     </div>
   );
 };
